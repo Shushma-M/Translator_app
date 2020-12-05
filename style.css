@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+:root{
+   --primary-color: #f2ba23;
+   --secondaryColor: #556d9a;
+   --tertiaryColor: #c6c5c0;
+}
+
+textarea{
+    width:50%;
+    height:10vh;
+    border-color: var(--tertiaryColor); 
+    border-radius: 5rem;
+    border-width: 0.5rem;
+    padding:0.5rem 1rem;
+    font-size: 25px;
+}
+textarea::placeholder {                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+} 
+button:enabled,button[enabled]{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:var(--secondaryColor);
+    color: white;
+    font-size: 20px;
+    font-family: 'MuseoModerno', cursive;
+    margin: 1rem 1rem;
+}
+
+button:disabled,button[disabled]{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:var(--secondaryColor);
+    color: white;
+    font-size: 20px;
+    font-family: 'MuseoModerno', cursive;
+    opacity: 0.6;
+    cursor: not-allowed;
+    margin: 1rem 1rem;
+}
+
+.opDisplay{
+    width:50%;
+    height:10vh;
+    border-style: solid;
+    border-color: var(--tertiaryColor); 
+    border-radius: 5rem;
+    border-width: 0.5rem;
+    padding:0.5rem 1rem;
+    background-color: white;
+    font-size: 25px;
+    font-family: 'Nova Mono', monospace;;
+    
+}
+.center{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.picture{
+    background-color:black;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+body{
+    background-color:var(--primary-color);
+}
+h1{
+    color:var(--secondaryColor);
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 80px;
+    margin: 0rem;
+}
+h3{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 40px;
+    margin: 0rem 0.5rem;
+    text-align: center;
+}
